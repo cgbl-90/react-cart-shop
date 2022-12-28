@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import carmen from "./carmen.svg";
+import ShoppingCart from "./ShoppingCart";
+import React from "react";
+import "./sass/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <header className="flex">
+        <img src={carmen} alt="Carmen Lopez" />
+        <h3>.React Hooks.</h3>
+      </header>
+      <main>
+        <ShoppingCart />
+      </main>
+      <footer className="flex">
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/cgbl-90"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          .github.
         </a>
-      </header>
+        <a href="https://t.me/cg_bl" target="_blank" rel="noopener noreferrer">
+          .let's connect on telegram.
+        </a>
+      </footer>
     </div>
   );
 }
